@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client';
 import './style.css';
 
 const projects = [
-  { no:'01', type:'AI-ASSISTED IP DESIGN', name:'花神记', sub:'十二花神系列盲盒视觉设计', year:'2025', image:'/images/flower.svg', tags:['IP视觉','AIGC','角色设计'], desc:'将传统花卉文化转译为当代盲盒语言。以花为线索，建立角色气质、色彩与造型之间的视觉关系。' },
-  { no:'02', type:'PRODUCT EXPERIENCE', name:'拾遗', sub:'让被忽略的日常重新被看见', year:'2026', image:'/images/shi-yi.svg', tags:['UI/UX','产品设计','交互原型'], desc:'从用户与竞品研究出发，梳理信息架构与核心流程，并完成关键界面和Axure交互原型。' },
-  { no:'03', type:'VISUAL COMMUNICATION', name:'美美与共', sub:'主题视觉设计 · 蓝桥杯', year:'2025', image:'/images/beauty.svg', tags:['视觉传达','版式设计','插画'], desc:'围绕主题进行视觉概念提炼与画面组织，探索传统文化意象与现代视觉表达的平衡。' },
-  { no:'04', type:'AI EXPERIMENT / WEB', name:'实验工作台', sub:'AI辅助创作与前端实践', year:'2026', image:'/images/lab.svg', tags:['AI创作','网页设计','原型实验'], desc:'将AI编程工具作为创作协作者，尝试从视觉构思到页面搭建的快速验证。' }
+  { no:'01', type:'AI-ASSISTED IP DESIGN', name:'花神记', sub:'十二花神系列盲盒视觉设计', year:'2025', image:'./images/flower.svg', tags:['IP视觉','AIGC','角色设计'], desc:'将传统花卉文化转译为当代盲盒语言。以花为线索，建立角色气质、色彩与造型之间的视觉关系。' },
+  { no:'02', type:'PRODUCT EXPERIENCE', name:'拾遗', sub:'让被忽略的日常重新被看见', year:'2026', image:'./images/shi-yi.svg', tags:['UI/UX','产品设计','交互原型'], desc:'从用户与竞品研究出发，梳理信息架构与核心流程，并完成关键界面和Axure交互原型。' },
+  { no:'03', type:'VISUAL COMMUNICATION', name:'美美与共', sub:'主题视觉设计 · 蓝桥杯', year:'2025', image:'./images/beauty.svg', tags:['视觉传达','版式设计','插画'], desc:'围绕主题进行视觉概念提炼与画面组织，探索传统文化意象与现代视觉表达的平衡。' },
+  { no:'04', type:'AI EXPERIMENT / WEB', name:'实验工作台', sub:'AI辅助创作与前端实践', year:'2026', image:'./images/lab.svg', tags:['AI创作','网页设计','原型实验'], desc:'将AI编程工具作为创作协作者，尝试从视觉构思到页面搭建的快速验证。' }
 ];
 const strengths = [
   ['01','视觉系统构建','从概念、色彩、字体到版式，建立统一且有辨识度的视觉表达。','VISUAL SYSTEM'],
@@ -23,7 +23,7 @@ function App(){
   <header className="nav"><a className="brand" href="#top" aria-label="回到首页"><span className="brand-mark">J.</span><span>JINGYI LIAO<small>VISUAL DESIGNER / AI CREATIVE</small></span></a><button className="menu-toggle" onClick={()=>setMenuOpen(!menuOpen)} aria-label="切换导航">{menuOpen?'CLOSE':'MENU'} <span>↗</span></button><nav className={menuOpen?'nav-links open':'nav-links'}><a href="#about" onClick={()=>setMenuOpen(false)}>ABOUT <i>01</i></a><a href="#work" onClick={()=>setMenuOpen(false)}>SELECTED WORK <i>02</i></a><a href="#approach" onClick={()=>setMenuOpen(false)}>APPROACH <i>03</i></a><a className="nav-contact" href="#contact" onClick={()=>setMenuOpen(false)}>联系我 <Arrow/></a></nav></header>
   <main id="top">
    <section className="hero">
-    <video className="hero-video" autoPlay muted loop playsInline poster="/images/hero-poster.svg"><source src="/hero-motion.mp4" type="video/mp4"/></video><div className="hero-grain"/><div className="hero-vignette"/>
+    <video className="hero-video" autoPlay muted loop playsInline poster="./images/hero-poster.svg"><source src="./hero-motion.mp4" type="video/mp4"/></video><div className="hero-grain"/><div className="hero-vignette"/>
     <div className="hero-meta"><span><b className="live-dot"/> AVAILABLE FOR OPPORTUNITIES</span><span>BASED IN NANJING, CHINA <i>↗</i></span></div>
     <div className="hero-copy"><p className="eyebrow reveal">DESIGNING WHAT COMES NEXT <span>— 2026 PORTFOLIO</span></p><h1 className="hero-title"><span className="title-line"><span>视觉<span className="title-outline">表达</span></span></span><span className="title-line title-line-second"><span>不止于<span className="accent">想象。</span></span></span></h1><div className="hero-bottom"><p className="hero-intro">以视觉为起点，以AI为工具，<br/>在品牌、数字体验与新媒介之间寻找新的表达。</p><a className="round-link" href="#work"><span>探索作品</span><b><Arrow/></b></a></div></div>
     <div className="hero-index"><span>SCROLL TO EXPLORE</span><span className="scroll-line"/><span>01 — 04</span></div>
